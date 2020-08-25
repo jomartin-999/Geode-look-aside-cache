@@ -17,7 +17,7 @@ Tanzu GemFire as a [look-aside cache](https://content.pivotal.io/blog/an-introdu
 
 The application uses [Spring Boot for Apache Geode](https://docs.spring.io/autorepo/docs/spring-boot-data-geode-build/current/reference/html5/) to cache data from the Bikewise.org public REST API. Look-aside caching is enabled with just a few annotations. When serving cached data, the application response time is dramatically improved.
 
-# How to get the app running on Kubernetes
+# How to get the app running on local Kubernetes
 When running with the beta version of Tanzu GemFire for Kubernetes there are few items you need to remember when in the envinroment.
 
 1.  Starting with Spring Boot 2.3, you can now run a comand and your build tool (maven or gradle) will build the Docker file for you.  For this application if you run ./gradlew bootBuildImage - it create an image for you on your local docker daemon.
